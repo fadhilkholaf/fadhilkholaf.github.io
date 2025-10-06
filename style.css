@@ -1,0 +1,344 @@
+:root {
+  --primary: #232946; /* deep indigo */
+  --accent: #5bc0be; /* muted teal */
+  --bg: #16161a; /* off-black */
+  --surface: #232946; /* for cards/sections */
+  --lavender: #b8c1ec; /* soft lavender */
+  --text: #eaeaea;
+  --muted: #7f8fa6;
+  --highlight: #eebbc3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+nav {
+  background: rgba(35, 41, 70, 0.98);
+  color: var(--lavender);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(35, 41, 70, 0.2);
+}
+nav .logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--highlight);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav ul li a {
+  color: var(--lavender);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: var(--accent);
+}
+.hero {
+  min-height: 60vh;
+  background: linear-gradient(rgba(35, 41, 70, 0.7), rgba(22, 22, 26, 0.7)),
+    url("all-about-lily-chou-chou.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--lavender);
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  box-shadow: 0 4px 24px rgba(35, 41, 70, 0.3);
+}
+.hero h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: var(--highlight);
+  text-shadow: 0 2px 8px #23294699;
+}
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: var(--lavender);
+  text-shadow: 0 1px 4px #23294699;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(91, 192, 190, 0.15);
+}
+.btn:hover {
+  background: var(--highlight);
+  color: var(--primary);
+}
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  color: var(--highlight);
+  margin-bottom: 1.2rem;
+}
+section p {
+  font-size: 1.1rem;
+  color: var(--lavender);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.gallery img {
+  max-width: 350px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(35, 41, 70, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(91, 192, 190, 0.25);
+}
+.quotes {
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 12px rgba(35, 41, 70, 0.15);
+}
+.quotes blockquote {
+  font-style: italic;
+  color: var(--highlight);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.quotes blockquote:before {
+  content: "“";
+  font-size: 2.5rem;
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+}
+.quotes cite {
+  display: block;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+.timeline {
+  border-left: 3px solid var(--accent);
+  margin: 2rem 0 0 1rem;
+  padding-left: 2rem;
+}
+.timeline-event {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.timeline-event:before {
+  content: "";
+  position: absolute;
+  left: -2.1rem;
+  top: 0.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--highlight);
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 2px 8px #23294655;
+}
+.timeline-event h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.timeline-event p {
+  color: var(--lavender);
+  font-size: 1rem;
+}
+footer {
+  background: var(--primary);
+  color: var(--lavender);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+.top-banner {
+  background: linear-gradient(90deg, #eebbc3 0%, #b8c1ec 100%);
+  color: #232946;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(35, 41, 70, 0.08);
+  position: relative;
+  z-index: 20;
+}
+.image-banner {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.image-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7) saturate(1.1);
+}
+.banner-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 24px #232946cc, 0 1px 8px #000a;
+  background: rgba(35, 41, 70, 0.35);
+  padding: 0.7rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #23294633;
+}
+@media (max-width: 1000px) {
+  section {
+    max-width: 98vw;
+    padding: 3rem 1rem;
+  }
+  .gallery img {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 1rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+  .hero {
+    padding: 2.5rem 1rem 1.5rem 1rem;
+  }
+  .banner-overlay-text {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  section h2 {
+    font-size: 1.1rem;
+  }
+  .gallery img {
+    max-width: 98vw;
+    border-radius: 10px;
+  }
+  .quotes {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .timeline {
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+  }
+  .timeline-event:before {
+    left: -1.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .banner-overlay-text {
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+  }
+  .image-banner {
+    max-height: 180px;
+  }
+  .image-banner img {
+    height: 120px;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+  }
+}
+/* Remove unused .top-banner styles if not needed */
+.top-banner {
+  display: none;
+}
