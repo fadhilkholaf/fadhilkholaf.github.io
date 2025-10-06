@@ -1,16 +1,30 @@
-# Tsuda Shiori – All About Lily Chou-Chou
+# Tsuda Shiori: The Silence Between Notes
 
-This page is for everyone who still remembers Tsuda Shiori—the way she walked through the fields, the silence in her eyes, and the music that seemed to carry her soul. Here you’ll find memories, images, and words about Shiori, her pain, her hope, and the mark she left on all of us who watched her story unfold.
+A quiet, cinematic single-page reading experience about Tsuda Shiori from All About Lily Chou-Chou (2001). Built with plain HTML + Tailwind + a touch of CSS for grain and fade-ins. Images are local in `public/`.
 
-## What You’ll Find Here
+## What’s inside
 
-- Pictures of Shiori, moments from the film, and scenes that linger in the mind
-- Thoughts and feelings about her journey, her struggles, and her search for peace
-- Quotes, theories, and the echoes of the Ether
-- A place to remember, reflect, and maybe find a little comfort in knowing you’re not alone in how you feel
+- Fixed minimal navbar with smooth scroll
+- Fullscreen hero with dark overlay
+- Centered article with generous whitespace and quote dividers
+- Epilogue with blurred background
+- SEO meta + Open Graph + JSON‑LD
+- Local assets: `public/all-about-lily-chou-chou.jpg`, `public/tsuda-shiori-2.jpg`, `public/tsuda-shiori-3.jpg`
 
-![Shiori in the field](public/all-about-lily-chou-chou.jpg "Tsuda Shiori")
+## Run / View
 
-If you want to share your own thoughts or memories, you’re always welcome here.
+- Open `index.html` directly in your browser, or
+- Serve locally (recommended for correct asset paths):
+  - VS Code: use “Live Server”, or
+  - Node: `npx serve .` then open the shown URL
 
-— Fadhil & friends
+## Customize
+
+- Replace images in `public/` and update paths in `index.html`
+- Tweak colors, spacing, and effects in `style.css`
+
+## Note
+
+This page’s writing and design were created with assistance from AI.
+
+© 2025 Fadhil
