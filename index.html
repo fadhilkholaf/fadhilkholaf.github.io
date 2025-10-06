@@ -31,6 +31,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#0a0f1a" />
     <link rel="manifest" href="site.webmanifest" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;500&display=swap"
@@ -201,6 +202,13 @@
       }
       window.addEventListener("scroll", onScrollFadeIn);
       window.addEventListener("DOMContentLoaded", onScrollFadeIn);
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
     </script>
   </body>
 </html>
