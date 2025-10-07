@@ -1,0 +1,33 @@
+# Global code owners
+* @fadhilkholaf
+
+# Documentation
+README.md @fadhilkholaf
+*.md @fadhilkholaf
+
+# Configuration files
+package.json @fadhilkholaf
+*.config.js @fadhilkholaf
+*.config.json @fadhilkholaf
+
+# GitHub specific files
+.github/ @fadhilkholaf
+CODEOWNERS @fadhilkholaf
+
+# License
+LICENSE @fadhilkholaf
+
+# Main content files
+index.html @fadhilkholaf
+style.css @fadhilkholaf
+script.js @fadhilkholaf
+sw.js @fadhilkholaf
+
+# Assets and images
+public/ @fadhilkholaf
+*.png @fadhilkholaf
+*.jpg @fadhilkholaf
+*.jpeg @fadhilkholaf
+*.svg @fadhilkholaf
+*.ico @fadhilkholaf
+*.webmanifest @fadhilkholaf
