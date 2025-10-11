@@ -28,25 +28,71 @@
         <link rel="manifest" href="public/icon/site.webmanifest" />
     </head>
     <body>
-        <h1>About Me</h1>
+        <h1>Muhammad Fadhil Kholaf</h1>
+        <img src="public/images/banner.jpg" alt="Image banner" />
+        <br />
+        <br />
+        <h2>About Me</h2>
         <p>Hello, my name is Muhammad Fadhil Kholaf, you can call me Fadhil</p>
         <br />
         <h2>Education</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td colspan="2">Aug 2025 - Current</td>
-                </tr>
-                <tr>
-                    <td>UNESA</td>
-                    <td>
-                        <p>Undergraduate Information Systems</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">Studying about data and systems</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul>
+            <li>
+                <br />
+            </li>
+            <li>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><p>UNESA</p></td>
+                            <td><p>Aug 2025 - Current</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Information Systems</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Theory of information systems, human resource
+                                management, code, and a lot of math.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <br />
+            </li>
+            <li>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><p>SMK Telkom Malang</p></td>
+                            <td><p>Jul 2022 - Jun 2025</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Software Engineering</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Code all the time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+        <script>
+            const lenis = new Lenis();
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+        </script>
     </body>
 </html>
