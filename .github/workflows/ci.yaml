@@ -1,0 +1,21 @@
+name: CI/CD
+
+on:
+    push:
+        branches: main
+
+jobs:
+    build:
+        name: Build New Version
+        runs-on: ubuntu-latest
+        steps:
+            - name: Pull New Version
+              uses: appleboy/ssh-action@v1.2.2
+              with:
+                  host: ${{ secrets.VPS_HOST }}
+                  username: ${{ secrets.VPS_USER }}
+                  port: ${{ secrets.VPS_PORT }}
+                  key: ${{ secrets.VPS_KEY }}
+                  script: |
+                      cd
+                      ls
