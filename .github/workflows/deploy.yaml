@@ -1,36 +1,36 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches: master
+    push:
+        branches: master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5
 
-      - name: Upload Pages Artifact
-        id: deployment
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
+            - name: Upload Pages Artifact
+              id: deployment
+              uses: actions/upload-pages-artifact@v4
+              with:
+                  path: .
 
-  deploy:
-    needs: build
+    deploy:
+        needs: build
 
-    permissions:
-      pages: write
-      id-token: write
+        permissions:
+            pages: write
+            id-token: write
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
